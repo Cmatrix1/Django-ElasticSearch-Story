@@ -1,0 +1,258 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="clearfix"></div>
+<!-- ============================ Page Title Start================================== -->
+<section class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                
+                <div class="breadcrumbs-wrap">
+                    <h2 class="breadcrumb-title font-2"> {{story.title}}</h2>
+                    <nav class="transparent">
+                        <ol class="breadcrumb p-0">
+                            <li class="breadcrumb-item"><a href="#">خانه</a></li>
+                            <li class="breadcrumb-item active theme-cl" aria-current="page">داستان</li>
+                        </ol>
+                    </nav>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ============================ Page Title End ================================== -->
+
+<!-- ============================ Blog Detail Start ================================== -->
+<section class="gray">
+
+    <div class="container" style="max-width: 1300px;">
+    
+        <!-- row Start -->
+        <div class="row">
+        
+            <!-- Blog Detail -->
+            <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                <div class="article_detail_wrapss single_article_wrap format-standard">
+                    <div class="article_body_wrap">
+                    
+                        <div class="article_featured_image">
+                            <img class="img-fluid" src="assets/img/b-7.png" alt="">
+                        </div>
+                        
+                        {% comment %} <div class="article_top_info">
+                            <ul class="article_middle_info">
+                                <li><a href="#"><span class="icons"><i class="ti-user"></i></span>نویسنده پریسا حسینی</a></li>
+                                <li><a href="#"><span class="icons"><i class="ti-comment-alt"></i></span>45 دیدگاه</a></li>
+                            </ul>
+                        </div> {% endcomment %}
+                        <p>{{story.content |linebreaks }}</p>
+                        <blockquote>
+                            <span class="icon"><i class="fas fa-quote-left"></i></span>
+                        </blockquote>
+                    </div>
+                </div>
+                
+                <!-- Blog Comment -->
+                <div class="article_detail_wrapss single_article_wrap format-standard">
+                    
+                    <div class="comment-area">
+                        {% comment %} <div class="all-comments">
+                            <h3 class="comments-title">دیدگاه کاربران</h3>
+                            <div class="comment-list">
+                                <ul>
+                                    <li class="article_comments_wrap">
+                                        <article>
+                                            <div class="article_comments_thumb">
+                                                <img src="assets/img/user-1.jpg" alt="">
+                                            </div>
+                                            <div class="comment-details">
+                                                <div class="comment-meta">
+                                                    <div class="comment-left-meta">
+                                                        <h4 class="author-name">علی مرشدی <span class="selected"><i class="fas fa-bookmark"></i></span></h4>
+                                                        <div class="comment-date">19 آذر 1400</div>
+                                                    </div>
+                                                    <div class="comment-reply">
+                                                        <a href="#" class="reply"><span class="icona"><i class="ti-back-left"></i></span> پاسخ</a>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-text">
+                                                    <p>مداد سفید تا صبح ماه کشید مهتاب کشید و انقدر ستاره کشید که کوچک و کوچکتر شد صبح توی جعبه مداد رنگی جای خالی او با هیچ رنگی  پر نشد، به یاد هم باشیم شاید فردا ما هم در کنار هم نباشیم…</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <ul class="children">
+                                            <li class="article_comments_wrap">
+                                                <article>
+                                                    <div class="article_comments_thumb">
+                                                        <img src="assets/img/user-2.jpg" alt="">
+                                                    </div>
+                                                    <div class="comment-details">
+                                                        <div class="comment-meta">
+                                                            <div class="comment-left-meta">
+                                                                <h4 class="author-name">مرضیه حسینی</h4>
+                                                                <div class="comment-date">28 مرداد 1400</div>
+                                                            </div>
+                                                            <div class="comment-reply">
+                                                                <a href="#" class="reply"><span class="icons"><i class="ti-back-left"></i></span> پاسخ</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="comment-text">
+                                                            <p>انقدر ستاره کشید که کوچک و کوچکتر شد صبح توی جعبه مداد رنگی جای خالی او با هیچ رنگی پر نشد، به یاد هم باشیم شاید فردا ما هم در کنار هم نباشیم…</p>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                                <ul class="children">
+                                                    <li class="article_comments_wrap">
+                                                        <article>
+                                                            <div class="article_comments_thumb">
+                                                                <img src="assets/img/user-4.jpg" alt="">
+                                                            </div>
+                                                            <div class="comment-details">
+                                                                <div class="comment-meta">
+                                                                    <div class="comment-left-meta">
+                                                                        <h4 class="author-name">الهام علیزاده</h4>
+                                                                        <div class="comment-date">19 مهر 1399</div>
+                                                                    </div>
+                                                                    <div class="comment-reply">
+                                                                        <a href="#" class="reply"><span class="icons"><i class="ti-back-left"></i></span> پاسخ</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="comment-text">
+                                                                    <p>داد سفید تا صبح ماه کشید مهتاب کشید و انقدر ستاره کشید که کوچک و کوچکتر شد صبح توی جعبه مداد رنگی جای خالی او با هیچ رنگی پر نشد</p>
+                                                                </div>
+                                                            </div>
+                                                        </article>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div> {% endcomment %}
+                        <div class="comment-box submit-form">
+                            <h3 class="reply-title">ثبت دیدگاه</h3>
+                            <div class="comment-form">
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="نام خود را وارد کنید">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="آدرس ایمیل">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <textarea name="comment" class="form-control" cols="30" rows="6" placeholder="نظر خود را بنویسید..."></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <a href="#" class="btn theme-bg text-white">ثبت دیدگاه</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+            
+            <!-- Single blog Grid -->
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                
+                <!-- Searchbard -->
+                <div class="single_widgets widget_search">
+                    <h4 class="title">جستجو</h4>
+                    <form action="#" class="sidebar-search-form">
+                        <input type="search" name="search" placeholder="عنوان مورد نظر...">
+                        <button type="submit"><i class="ti-search"></i></button>
+                    </form>
+                </div>
+
+                <!-- Categories -->
+                <div class="single_widgets widget_tags">
+                    <h4 class="title">دسته بندی های این داستان</h4>
+                    <ul>
+                        {% for tag in story.tag.all %}
+                            <li><a href="#" class="global-rtl">{{tag}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                <!-- Trending Posts -->
+                <div class="single_widgets widget_thumb_post">
+                    <h4 class="title">جدیدترین داستان ها</h4>
+                    <ul>
+                        <li>
+                            <span class="left">
+                                <img src="assets/img/b-1.png" alt="" class="">
+                            </span>
+                            <span class="right">
+                                <a class="feed-title" href="#">ساخت بکگراند برای اینستاگرام</a> 
+                                <span class="post-date"><i class="ti-calendar"></i>10 دقیقه پیش</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="left">
+                                <img src="assets/img/b-2.png" alt="" class="">
+                            </span>
+                            <span class="right">
+                                <a class="feed-title" href="#">اعمال بک‌گراند و تنظیم حرکت آن</a> 
+                                <span class="post-date"><i class="ti-calendar"></i>2 ساعت پیش</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="left">
+                                <img src="assets/img/b-3.png" alt="" class="">
+                            </span>
+                            <span class="right">
+                                <a class="feed-title" href="#">تنظیمات سکانس تایم‌لپس</a> 
+                                <span class="post-date"><i class="ti-calendar"></i>4 ساعت پیش</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="left">
+                                <img src="assets/img/b-4.png" alt="" class="">
+                            </span>
+                            <span class="right">
+                                <a class="feed-title" href="#">آشنایی کامل با Pinning و درک آن</a> 
+                                <span class="post-date"><i class="ti-calendar"></i>7 ساعت پیش</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="left">
+                                <img src="assets/img/b-5.png" alt="" class="">
+                            </span>
+                            <span class="right">
+                                <a class="feed-title" href="#">آشنایی با ابزار Guide Template</a> 
+                                <span class="post-date"><i class="ti-calendar"></i>3 روز پیش</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </div>
+        <!-- /row -->					
+        
+    </div>
+            
+</section>
+<!-- ============================ Blog Detail End ================================== -->
+
+
+{% endblock content %}

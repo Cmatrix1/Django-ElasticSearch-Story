@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<section class="page-title bg-cover" style="background:url({% static 'img/sexy/02.jpg' %})no-repeat;" data-overlay="8">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                
+                <div class="breadcrumbs-wrap">
+                    <h1 class="breadcrumb-title text-light font-2">لیست داستان ها</h1>
+                    <nav class="transparent">
+                        <ol class="breadcrumb p-0">
+                            <li class="breadcrumb-item"><a href="#" class="text-light">خانه</a></li>
+                            <li class="breadcrumb-item active theme-cl" aria-current="page">لیست داستان ها</li>
+                        </ol>
+                    </nav>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="min">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="short_wraping">
+                        <div class="row m-0 align-items-center justify-content-between">
+                    
+                        <div class="form-group" style="width: 30%; display: flex;">
+                            <input type="text" class="form-control" placeholder="جستجوی داستان...">
+                            <a href="course-detail.html" class="btn btn_view_detail theme-bg text-light">جستجو</a>
+                        </div>
+                        <div class="dlks_152">
+                            <div class="shorting-right ml-2">
+                                <label>مرتب سازی براساس:</label>
+                                <div class="dropdown show">
+                                    <a class="btn btn-filter dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="selection">امتیاز بالا</span>
+                                    </a>
+                                    <div class="drp-select dropdown-menu">
+                                        <a class="dropdown-item" href="JavaScript:Void(0);">امتیاز بالا</a>
+                                        <a class="dropdown-item" href="JavaScript:Void(0);">بازدید بالا</a>
+                                        <a class="dropdown-item" href="JavaScript:Void(0);">دوره جدید</a>
+                                        <a class="dropdown-item" href="JavaScript:Void(0);">دوره منتخب</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="row">
+                <!-- Single Item -->
+                {% for story in storys %}    
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="blg_grid_box">
+                        <div class="blg_grid_thumb">
+                            <a href="blog-detail.html"><img src="assets/img/b-1.png" class="img-fluid" alt=""></a>
+                        </div>
+                        <div class="blg_grid_caption">
+                            <div class="blg_title"><h4><a href="blog-detail.html">{{story.title}}</a></h4></div>
+                            <div class="blg_desc"><p>{{story.content|truncatewords_html:20}}</p></div>
+                            {% for tag in story.tag.all %}
+                                <div class="blg_tag"><span>{{tag}}</span></div>
+                            {% endfor %}
+                        </div>
+
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+    
+        </div>
+        
+    </div>
+</section>
+
+
+{% endblock content %}
