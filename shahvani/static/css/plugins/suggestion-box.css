@@ -1,0 +1,34 @@
+#suggestion-box {
+  color: #000;
+  display: none;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 0;
+  margin: 0 10px 0 0; }
+  #suggestion-box #no-suggestions {
+    padding: 10px; }
+  #suggestion-box ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    clear: both; }
+    #suggestion-box ul > li {
+      padding: 0;
+      margin: 0; }
+      #suggestion-box ul > li a {
+        display: block;
+        height: 100%;
+        color: inherit;
+        text-decoration: none;
+        padding: 10px; }
+  #suggestion-box .selected {
+    background-color: #eee; }
+  #suggestion-box #suggestion-header {
+    margin-right: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: #999;
+    float: right; }
