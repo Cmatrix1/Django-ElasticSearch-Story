@@ -87,6 +87,8 @@ THIRD_PARTY_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
+    "rest_framework",
+    "django_elasticsearch_dsl",
 ]
 
 LOCAL_APPS = [
@@ -287,3 +289,9 @@ SOCIALACCOUNT_FORMS = {"signup": "shahvani.users.forms.UserSocialSignupForm"}
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+
+ELASTICSEARCH_DSL = {
+    'default': {
+        'hosts': 'http://elastic:sadegh1384@localhost:9200'
+    },
+}
